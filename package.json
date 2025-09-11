@@ -1,6 +1,6 @@
 {
   "name": "zarcogreeter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "main": "src/index.js",
   "module": "src/index.mjs",
@@ -26,7 +26,17 @@
     "high-performance",
     "image-processing",
     "ZarCodeX",
-    "ZarcoGreeter"
+    "ZarcoGreeter",
+    "welcome",
+    "greeter",
+    "card",
+    "generator",
+    "utility",
+    "image",
+    "graphics",
+    "design",
+    "custom",
+    "personalization"
   ],
   "author": "ZarCodeX",
   "license": "MIT",
