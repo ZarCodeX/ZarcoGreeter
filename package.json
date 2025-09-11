@@ -1,0 +1,54 @@
+{
+  "name": "zarcogreeter",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./src/index.mjs",
+      "require": "./src/index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node examples/example.js"
+  },
+  "keywords": [
+    "welcome-card",
+    "canvas",
+    "image-generation",
+    "discord",
+    "greeting-card",
+    "node.js",
+    "npm-package",
+    "customizable",
+    "high-performance",
+    "image-processing",
+    "ZarCodeX",
+    "ZarcoGreeter"
+  ],
+  "author": "ZarCodeX",
+  "license": "MIT",
+  "description": "ZarcoGreeter makes creating greeting card images in Node.js effortless and fully customizable.",
+  "homepage": "https://github.com/ZarCodeX/ZarcoGreeter#readme",
+  "bugs": {
+    "url": "https://github.com/ZarCodeX/ZarcoGreeter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZarCodeX/ZarcoGreeter.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src",
+    "assets",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.79"
+  }
+}
