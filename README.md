@@ -49,7 +49,7 @@ import fs from 'fs';
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://avatars.githubusercontent.com/u/1024025?v=4',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarCodeX/refs/heads/main/images/ZarCodeX%20(original).png',
     };
 
     const guild = 'My Awesome Server';
