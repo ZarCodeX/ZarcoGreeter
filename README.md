@@ -6,7 +6,7 @@ ZarcoGreeter makes creating greeting card images in Node.js effortless and fully
 
 ---
 
-![Example Card](assets/images/welcome-style1-basic.png)
+![Card](https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/main/assets/images/card.png)
 
 ## 🌟 Features
 
@@ -18,19 +18,19 @@ ZarcoGreeter makes creating greeting card images in Node.js effortless and fully
 
 ## 🎨 Style Showcase
 
-Background, colors, and text are customizable.
+# 🟢 Background, colors, and text are customizable.
 
 | Style 1 | Style 2 |
 | :---: | :---: |
-| ![Style 1](assets/images/welcome-style1-basic.png) | ![Style 2](assets/images/welcome-style2-basic.png) |
+| ![Style 1](https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/main/assets/images/welcome-style1-basic.png) | ![Style 2](https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/main/assets/images/welcome-style2-basic.png) |
 
 | Style 3 | Style 4 |
 | :---: | :---: |
-| ![Style 3](assets/images/welcome-style3-basic.png) | ![Style 4](assets/images/welcome-style4-basic.png) |
+| ![Style 3](https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/main/assets/images/welcome-style3-basic.png) | ![Style 4](https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/main/assets/images/welcome-style4-basic.png) |
 
 | Fully Customized |
 | :---: |
-| ![Customized](assets/images/welcome-style3-fully-custom.png) |
+| ![Customized](https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/main/assets/images/welcome-style3-fully-custom.png) |
 
 ## 📦 Installation
 
