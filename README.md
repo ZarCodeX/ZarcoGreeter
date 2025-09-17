@@ -69,7 +69,7 @@ const fs = require('fs');
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarCodeX/refs/heads/main/assets/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
@@ -115,7 +115,7 @@ const fs = require('fs');
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarCodeX/refs/heads/main/assets/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
@@ -142,7 +142,7 @@ import fs from 'fs';
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
@@ -163,7 +163,7 @@ const fs = require('fs');
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarCodeX/refs/heads/main/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
@@ -190,7 +190,7 @@ import fs from 'fs';
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
@@ -211,7 +211,7 @@ const fs = require('fs');
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
@@ -238,7 +238,7 @@ import fs from 'fs';
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarCodeX/refs/heads/main/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
@@ -259,7 +259,7 @@ const fs = require('fs');
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarCodeX/refs/heads/main/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
@@ -276,6 +276,54 @@ generateCard();
 
 ![Style 4 Custom Background](https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/main/assets/images/welcome-style4-custom-bg.png)
 
+### Custom Welcome Text (Style 2)
+
+**ESM**
+```javascript
+import { style2 } from 'zarcogreeter';
+import fs from 'fs';
+
+async function generateCard() {
+    const user = {
+        username: 'ZarCodeX',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/images/ZarCodeX%20(original).png',
+    };
+    const guild = 'My Awesome Server';
+
+    const buffer = await style2(user, guild, {
+        text: 'Greetings',
+    });
+    fs.writeFileSync('welcome-style2-custom-text.png', buffer);
+}
+
+generateCard();
+```
+
+**CJS**
+```javascript
+const { style2 } = require('zarcogreeter');
+const fs = require('fs');
+
+async function generateCard() {
+    const user = {
+        username: 'ZarCodeX',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarCodeX/refs/heads/main/images/ZarCodeX%20(original).png',
+    };
+    const guild = 'My Awesome Server';
+
+    const buffer = await style2(user, guild, {
+        text: 'Greetings',
+    });
+    fs.writeFileSync('welcome-style2-custom-text.png', buffer);
+}
+
+generateCard();
+```
+
+**Result:**
+
+![Style 2 Custom Text](https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/main/assets/images/welcome-style2-custom-text.png)
+
 ### Fully Customized (Style 3)
 
 **ESM**
@@ -286,7 +334,7 @@ import fs from 'fs';
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarCodeX/refs/heads/main/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
@@ -310,7 +358,7 @@ const fs = require('fs');
 async function generateCard() {
     const user = {
         username: 'ZarCodeX',
-        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarcoGreeter/refs/heads/main/assets/images/ZarCodeX%20(original).png',
+        avatarURL: 'https://raw.githubusercontent.com/ZarCodeX/ZarCodeX/refs/heads/main/images/ZarCodeX%20(original).png',
     };
     const guild = 'My Awesome Server';
 
