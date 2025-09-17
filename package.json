@@ -1,6 +1,6 @@
 {
   "name": "zarcogreeter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "main": "src/index.js",
   "module": "src/index.mjs",

@@ -58,12 +58,3 @@ tmp/
 # Package manager files
 package-lock.json
 yarn.lock
-assets/images/welcome-style4-custom-bg.png
-assets/images/welcome-style4-custom-bg.png
-assets/images/welcome-style4-basic.png
-assets/images/welcome-style3-fully-custom.png
-assets/images/welcome-style3-basic.png
-assets/images/welcome-style2-basic.png
-assets/images/welcome-style1-custom-colors.png
-assets/images/welcome-style1-basic.png
-assets/images/card.png

@@ -9,13 +9,22 @@ export async function style1(user, guild, options = {}) {
     const canvas = createCanvas(1024, 450);
     const ctx = canvas.getContext('2d');
 
-    const background = await loadImage(options.backgroundImage || path.join(__dirname, '../assets/images/bg.png'));
+    let background;
+    try {
+        background = options.backgroundImage
+            ? await loadImage(options.backgroundImage)
+            : await loadImage(path.join(__dirname, '../assets/images/bg.png'));
+    } catch {
+        background = await loadImage(path.join(__dirname, '../assets/images/bg.png'));
+    }
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
+    const welcomeText = options.text || 'WELCOME';
+    if (welcomeText.length > 15) throw new Error('Welcome text is too long! (max 15 characters)');
     ctx.font = '100px "Bungee"';
     ctx.fillStyle = options.welcomeColor || '#FFFFFF';
     ctx.textAlign = 'center';
-    ctx.fillText('WELCOME', canvas.width / 2, 120);
+    ctx.fillText(welcomeText, canvas.width / 2, 120);
 
     const avatar = await loadImage(user.avatarURL);
     const avatarSize = 200;
@@ -48,14 +57,20 @@ export async function style2(user, guild, options = {}) {
     const canvas = createCanvas(1024, 450);
     const ctx = canvas.getContext('2d');
 
-    const avatar = await loadImage(user.avatarURL);
-    ctx.filter = 'blur(10px)';
-    ctx.drawImage(avatar, -canvas.width/2, -canvas.height/2, canvas.width * 2, canvas.height * 2);
-    ctx.filter = 'none';
+    let background;
+    try {
+        background = options.backgroundImage
+            ? await loadImage(options.backgroundImage)
+            : await loadImage(path.join(__dirname, '../assets/images/bg.png'));
+    } catch {
+        background = await loadImage(path.join(__dirname, '../assets/images/bg.png'));
+    }
+    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+    const avatar = await loadImage(user.avatarURL);
     const avatarSize = 200;
     const avatarX = (canvas.width - avatarSize) / 2;
     const avatarY = 50;
@@ -67,10 +82,12 @@ export async function style2(user, guild, options = {}) {
     ctx.drawImage(avatar, avatarX, avatarY, avatarSize, avatarSize);
     ctx.restore();
 
+    const welcomeText = options.text || 'Welcome';
+    if (welcomeText.length > 15) throw new Error('Welcome text is too long! (max 15 characters)');
     ctx.font = '70px "Bungee"';
     ctx.fillStyle = options.welcomeColor || '#FFFFFF';
     ctx.textAlign = 'center';
-    ctx.fillText(`Welcome, ${user.username}!`, canvas.width / 2, 350);
+    ctx.fillText(`${welcomeText}, ${user.username}!`, canvas.width / 2, 350);
 
     ctx.font = '40px "Luckiest Guy"';
     ctx.fillStyle = options.guildColor || '#B9BBBE';
@@ -106,9 +123,11 @@ export async function style3(user, guild, options = {}) {
     ctx.drawImage(avatar, avatarX, avatarY, avatarSize, avatarSize);
     ctx.restore();
 
+    const welcomeText = options.text || 'WELCOME';
+    if (welcomeText.length > 20) throw new Error('Welcome text is too long! (max 20 characters)');
     ctx.fillStyle = options.welcomeColor || '#FFFFFF';
     ctx.font = '60px "Bungee"';
-    ctx.fillText('WELCOME', 350, 150);
+    ctx.fillText(welcomeText, 350, 150);
 
     ctx.font = '80px "Luckiest Guy"';
     ctx.fillStyle = options.usernameColor || '#FFFFFF';
