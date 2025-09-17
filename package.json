@@ -1,6 +1,6 @@
 {
   "name": "zarcogreeter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "main": "src/index.js",
   "module": "src/index.mjs",
@@ -54,7 +54,7 @@
   },
   "files": [
     "src",
-    "assets",
+    "assets/fonts",
     "LICENSE",
     "README.md"
   ],
